@@ -17,7 +17,7 @@ main:
     url: 'event'
     weight: 40
   - name: Slides
-    url: 'slides'
+    url: 'lotus-slides'
     weight: 41
   - name: Publications
     url: 'publication'
