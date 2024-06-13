@@ -19,7 +19,7 @@ main:
   - name: Slides
     url: 'lotus-slides'
     weight: 50
-    - name: Queries
+  - name: Queries
     url: 'lotus-queries'
     weight: 50
   - name: Publications
