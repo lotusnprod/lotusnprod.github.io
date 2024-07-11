@@ -10,4 +10,4 @@ hero_media: logo.svg
 
 This project is currently only available to beta-testers, contact us for more info.
 
-![Lotus logo](https://commons.wikimedia.org/wiki/File:Lotus_initiative_logo.svg)
+![Lotus logo](logo.svg)
