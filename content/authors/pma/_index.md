@@ -34,9 +34,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:Pierre-Marie.Allard@unige.ch'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/NatprodCbn
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?user=bPfFArgAAAAJ&hl

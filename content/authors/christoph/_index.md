@@ -45,9 +45,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:christoph.steinbeck@uni-jena.de'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/csteinbeck
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=PwIiNu0AAAAJ

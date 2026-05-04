@@ -42,14 +42,6 @@ tags: []
 categories: []
 featured: false
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
-
 url_pdf: 'https://doi.org/10.7554/eLife.70780'
 url_code: 'https://github.com/lotusnprod'
 url_dataset: 'https://zenodo.org/communities/the-lotus-initiative'

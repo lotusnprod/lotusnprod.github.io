@@ -39,9 +39,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:maria.sorokina@uni-jena.de'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/ms_sorok
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=s2FngbAAAAAJ

@@ -39,9 +39,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:egon​.​willighagen​@​​maastricht​university​.​nl'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/egonwillighagen
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?hl=fr&user=u8SjMZ0AAAAJ

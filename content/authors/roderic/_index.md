@@ -38,9 +38,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'roderic.page@glasgow.ac.uk'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/rdmpage
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=4Z5WABAAAAAJ
