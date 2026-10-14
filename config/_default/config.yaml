@@ -1,11 +1,7 @@
 # Configuration of Hugo
-# Guide: https://wowchemy.com/docs/getting-started/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-title: The LOTUS Initiative # Website name
-baseurl: 'https://lotus.nprod.net' # Website URL
-copyright: 'CC0' # Footer text, e.g. '© {year} Me'
+title: The LOTUS Initiative
+baseurl: 'https://lotus.nprod.net'
+copyright: 'CC0'
 
 ############################
 ## LANGUAGE
@@ -73,8 +69,3 @@ security:
     getenv:
       - ^HUGO_
       - ^WC_
-
-module:
-  imports:
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
