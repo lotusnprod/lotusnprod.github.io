@@ -3,16 +3,16 @@ title: The LOTUS Initiative
 description: Open knowledge management for natural products research
 type: landing
 sections:
-  - block: hero
+  - block: markdown
     content:
       title: The LOTUS Initiative
-      text: Open knowledge management for natural products research. We connect natural products research through open data, curated knowledge, and reproducible workflows.
-      primary_action:
-        text: Explore LOTUS on Wikidata
-        url: https://www.wikidata.org/wiki/Wikidata:WikiProject_LOTUS
-      secondary_action:
-        text: GitHub
-        url: https://github.com/lotusnprod
+      text: >-
+        Open knowledge management for natural products research. We connect natural
+        products research through open data, curated knowledge, and reproducible
+        workflows.
+
+        [Explore LOTUS on Wikidata](https://www.wikidata.org/wiki/Wikidata:WikiProject_LOTUS) ·
+        [GitHub](https://github.com/lotusnprod)
   - block: markdown
     content:
       title: Open knowledge for natural products research
