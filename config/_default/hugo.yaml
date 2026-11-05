@@ -64,6 +64,7 @@ security:
       - '^npx$'
       - '^npm$'
       - '^node$'
+      - '^go$'
       - '^tailwindcss$'
 sitemap:
   _merge: deep
