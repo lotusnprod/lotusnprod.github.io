@@ -1,6 +1,4 @@
 # Navigation Links
-# Keep entries aligned with the existing site sections while using the modern Hugo Blox format.
-
 main:
   - name: Home
     url: /
@@ -8,15 +6,18 @@ main:
   - name: News
     url: /post/
     weight: 20
+  - name: Events
+    url: /event/
+    weight: 30
   - name: People
     url: /people/
-    weight: 30
-  - name: Publications
-    url: /publication/
     weight: 40
+  - name: Publications
+    url: /publications/
+    weight: 50
   - name: Sheets
     url: /sheets/
-    weight: 45
+    weight: 60
   - name: Contact
     url: /contact/
-    weight: 60
+    weight: 70
