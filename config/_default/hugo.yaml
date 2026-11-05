@@ -59,5 +59,11 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  exec:
+    allow:
+      - '^npx$'
+      - '^npm$'
+      - '^node$'
+      - '^tailwindcss$'
 sitemap:
   _merge: deep
