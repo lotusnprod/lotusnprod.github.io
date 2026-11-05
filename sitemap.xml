@@ -70,12 +70,12 @@
   <url>
     <loc>https://lotus.nprod.net/post/wd-query-example/</loc><lastmod>2021-02-16T15:49:43+01:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://lotus.nprod.net/contact/</loc><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://lotus.nprod.net/people/</loc><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://lotus.nprod.net/authors/arnaud/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://lotus.nprod.net/contact/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://lotus.nprod.net/authors/gfp/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://lotus.nprod.net/sheets/</loc><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://lotus.nprod.net/sheets/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://lotus.nprod.net/people/</loc><changefreq>weekly</changefreq></url></urlset>
