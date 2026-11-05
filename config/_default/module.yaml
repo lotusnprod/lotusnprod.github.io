@@ -22,10 +22,16 @@ imports:
       # layouts/_partials/hbx/blocks/<block>/block.html.
       - source: blox/content-collection
         target: layouts/_partials/hbx/blocks/content-collection
+        files:
+          - block.html
       - source: blox/hero
         target: layouts/_partials/hbx/blocks/hero
+        files:
+          - block.html
       - source: blox/markdown
         target: layouts/_partials/hbx/blocks/markdown
+        files:
+          - block.html
 
       # Block client code and assets.
       - source: blox
