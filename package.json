@@ -2,7 +2,7 @@
   "name": "lotusnprod.github.io",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.34.9",
+  "packageManager": "pnpm@12.16.1",
   "description": "The LOTUS Initiative website powered by Hugo Blox",
   "scripts": {
     "dev": "hugo server --disableFastRender",
