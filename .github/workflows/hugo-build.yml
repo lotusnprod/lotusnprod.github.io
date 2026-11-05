@@ -41,9 +41,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: |
-          # hugo mod clean
-          hugo
+        run: hugo --logLevel debug
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453
