@@ -5,12 +5,28 @@
     <link>https://lotus.nprod.net/authors/jonathan/</link>
       <atom:link href="https://lotus.nprod.net/authors/jonathan/index.xml" rel="self" type="application/rss+xml" />
     <description>Jonathan Bisson</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>CC0</copyright><lastBuildDate>Fri, 27 May 2022 10:22:26 +0200</lastBuildDate>
-    <image>
-      <url>https://lotus.nprod.net/authors/jonathan/avatar_hufbddc20f519dbb827a20e7ae3bd83a09_29619_270x270_fill_lanczos_center_3.png</url>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 May 2022 10:22:26 +0200</lastBuildDate>
+    <item>
       <title>Jonathan Bisson</title>
       <link>https://lotus.nprod.net/authors/jonathan/</link>
-    </image>
+      <pubDate>Fri, 27 May 2022 10:22:26 +0200</pubDate>
+      <guid>https://lotus.nprod.net/authors/jonathan/</guid>
+      <description>&lt;p&gt;You know how science collected lots of facts about the world. I focus my work on the facts related to the molecules produced by living organisms that could or will be drugs, or are used traditionally. To do so, I am developing laboratory (wet-lab) and software methods (computer lab) to capture, search, verify and share those facts.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Software Development, Knowledge and Data management&lt;/strong&gt;: Kotlin (JVM), Python, Spring Boot, Vue, Typescript, Ansible, Qemu/Libvirt,
+Ontologies, BFO, SPARQL, Information Retrieval Systems (Solr and ElasticSearch), SQL (mostly PostgreSQL)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pharmacognosy and Natural product research&lt;/strong&gt; Tuberculosis and antibacterials, Antiparasites (schistosomiasis), Pain (and PAINS) management&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lab work&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Analytical techniques&lt;/em&gt; MS, NMR, (U)HPLC&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Metabolites from Plants, Bacterias and Fungi&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Molecular Networking&lt;/em&gt; (working on something beyond that)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Software and hardware development for research tools and toys&lt;/strong&gt; microcontrollers, 3d printing, laser cutting, CAD design (openSCAD, Blender), retrofitting, adaptations, reverse engineering , ç̡̛̱͉̥͎̝̳͇̲̲̼̟̞̬͐̅ͦͭ͛̀ͥh̡̙͓̦̪͍̲̺̲̔͗̔̐ͩ̈̅ͭͣ͘͢ą̜̦̜̝̞̬̬̗̦̳̠͕̠̻̗͌̔͋̐́ͧͤ̾͊̄͆̇͑̾ͬ̉ͨ́͘͠ơ̬̬̺͔͇͙̤̺̌͊ͭ̈͒ͥͪ͘͢s̸̵̛̝͚͎̹̤̻͚̱̲̺̥̜̮͇͓ͮͥ͛̊͌̋ͩ̈ͫ͜ͅ.̸ͥ̅̉ͣ̊̅ͮ̆̒̇̓ͭ͏͎̪̖͈̠̣̮̝̮̪̥͎̫̩̦ͅ&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>The LOTUS initiative for open knowledge management in natural products research</title>
@@ -69,7 +85,8 @@
         &lt;/a&gt;
     &lt;/div&gt;
   &lt;/section&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+.&lt;/p&gt;
 </description>
     </item>
     

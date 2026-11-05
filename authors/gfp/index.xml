@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gfp | The LOTUS Initiative</title>
+    <link>https://lotus.nprod.net/authors/gfp/</link>
+      <atom:link href="https://lotus.nprod.net/authors/gfp/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gfp</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language>
+    <item>
+      <title>Guido F. Pauli</title>
+      <link>https://lotus.nprod.net/authors/guido/</link>
+      <pubDate>Fri, 27 May 2022 10:22:26 +0200</pubDate>
+      <guid>https://lotus.nprod.net/authors/guido/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Guido &amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

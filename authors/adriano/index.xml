@@ -5,12 +5,17 @@
     <link>https://lotus.nprod.net/authors/adriano/</link>
       <atom:link href="https://lotus.nprod.net/authors/adriano/index.xml" rel="self" type="application/rss+xml" />
     <description>Adriano Rutz</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>CC0</copyright><lastBuildDate>Fri, 27 May 2022 10:22:26 +0200</lastBuildDate>
-    <image>
-      <url>https://lotus.nprod.net/authors/adriano/avatar_hu02aa61ae1d9de35cbe238d2676170cb9_267778_270x270_fill_q75_lanczos_center.jpg</url>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 May 2022 10:22:26 +0200</lastBuildDate>
+    <item>
       <title>Adriano Rutz</title>
       <link>https://lotus.nprod.net/authors/adriano/</link>
-    </image>
+      <pubDate>Fri, 27 May 2022 10:22:26 +0200</pubDate>
+      <guid>https://lotus.nprod.net/authors/adriano/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Adriano thinks that bitter is better.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>The LOTUS initiative for open knowledge management in natural products research</title>
@@ -69,7 +74,8 @@
         &lt;/a&gt;
     &lt;/div&gt;
   &lt;/section&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+.&lt;/p&gt;
 </description>
     </item>
     

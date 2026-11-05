@@ -5,7 +5,7 @@
     <link>https://lotus.nprod.net/post/</link>
       <atom:link href="https://lotus.nprod.net/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>CC0</copyright><lastBuildDate>Fri, 28 May 2021 02:26:12 +0200</lastBuildDate>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 28 May 2021 02:26:12 +0200</lastBuildDate>
     <image>
       <url>https://lotus.nprod.net/media/logo.svg</url>
       <title>Latest News</title>
@@ -21,12 +21,23 @@
 &lt;h1 id=&#34;manual-addition-of-a-documented-structure-organism-pair-to-wikidata&#34;&gt;Manual addition of a documented structure-organism pair to Wikidata&lt;/h1&gt;
 &lt;h2 id=&#34;select-a-documented-structure-organism-pair&#34;&gt;Select a documented structure-organism pair&lt;/h2&gt;
 &lt;p&gt;Throughout this demonstration, we are going to use the following example:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://pubchem.ncbi.nlm.nih.gov/compound/101556657&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;trigocherrin A&lt;/a&gt; is found in &lt;a href=&#34;http://gni.globalnames.org/name_strings?search_term=trigonostemon&amp;#43;cherrieri&amp;amp;commit=Search&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Trigonostemon cherrieri&lt;/em&gt;&lt;/a&gt;, as stated in &lt;a href=&#34;https://doi.org/10.1021/OL2030907&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trigocherrin A, the first natural chlorinated daphnane diterpene orthoester from Trigonostemon cherrieri&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+
+  
+  &lt;blockquote class=&#34;border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 italic text-neutral-600 dark:text-neutral-400 my-6&#34;&gt;
+    &lt;p&gt;
+ is found in 
+, as stated in 
+.&lt;/p&gt;
+
+  &lt;/blockquote&gt;
+
 &lt;h2 id=&#34;fetch-the-information-for-the-documented-structure-organism-pair&#34;&gt;Fetch the information for the documented structure-organism pair&lt;/h2&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
-&lt;p&gt;Search PubChem for your compound, here &lt;a href=&#34;https://pubchem.ncbi.nlm.nih.gov/#query=%22trigocherrin%20A%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;trigocherrin A&lt;/a&gt;. This leads to &lt;a href=&#34;https://pubchem.ncbi.nlm.nih.gov/compound/101556657&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://pubchem.ncbi.nlm.nih.gov/compound/101556657&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Search PubChem for your compound, here 
+. This leads to 
+.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -44,12 +55,12 @@
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-15-54_hu6f3ce612bc90e0afaea9329fccc82e98_335755_bfff325f28c9704333fe40ed397238cc.png 400w,
-               /media/2021-02-25-14-15-54_hu6f3ce612bc90e0afaea9329fccc82e98_335755_abf9295c9a4b4354b2eaf62982daf7af.png 760w,
-               /media/2021-02-25-14-15-54_hu6f3ce612bc90e0afaea9329fccc82e98_335755_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-15-54_hu6f3ce612bc90e0afaea9329fccc82e98_335755_bfff325f28c9704333fe40ed397238cc.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-15-54_hu_8af5626f2fa0032e.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-15-54_hu_b4e33db00f7e1e21.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-15-54_hu_42acde2182f9dc37.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-15-54_hu_8af5626f2fa0032e.webp&#34;
                width=&#34;760&#34;
                height=&#34;321&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -57,14 +68,14 @@
 &lt;/p&gt;
 &lt;p&gt;From there, you can fetch the compound&amp;rsquo;s name, InChIKey and InChI as well as its Canonical and Isomeric SMILES.
 Here we keep, respectively:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* trigocherrin A
-* QOVGHDRCAGYGEB-FFZYJECLSA-N
-* InChI=1S/C38H36Cl2O12/c1-18(2)35(44)27-19(3)37-25-16-24(31(39)40)28(48-32(43)22-12-8-6-9-13-22)36(25,45)33(47-21(5)42)34(17-46-20(4)41)29(49-34)26(37)30(35)51-38(50-27,52-37)23-14-10-7-11-15-23/h6-16,19,26-30,33,44-45H,1,17H2,2-5H3/t19-,26+,27?,28+,29+,30-,33-,34+,35+,36-,37+,38?/m1/s1
-* CC1C2C(C3C4C1(C5=CC(=C(Cl)Cl)C(C5(C(C6(C4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O2)(O3)C8=CC=CC=C8)(C(=C)C)O
-* C[C@@H]1C2[C@]([C@H]3[C@H]4[C@]1(C5=CC(=C(Cl)Cl)[C@@H]([C@]5([C@@H]([C@@]6([C@H]4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O3)(O2)C8=CC=CC=C8)(C(=C)C)O
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;organism&#34;&gt;Organism&lt;/h3&gt;
-&lt;p&gt;You can check if your organism name is correctly spelled using the Global Names resolver service: &lt;a href=&#34;http://gni.globalnames.org/name_strings?search_term=trigonostemon&amp;#43;cherrieri&amp;amp;commit=Search&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://gni.globalnames.org/name_strings?search_term=trigonostemon+cherrieri&amp;amp;commit=Search&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* trigocherrin A
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* QOVGHDRCAGYGEB-FFZYJECLSA-N
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* InChI=1S/C38H36Cl2O12/c1-18(2)35(44)27-19(3)37-25-16-24(31(39)40)28(48-32(43)22-12-8-6-9-13-22)36(25,45)33(47-21(5)42)34(17-46-20(4)41)29(49-34)26(37)30(35)51-38(50-27,52-37)23-14-10-7-11-15-23/h6-16,19,26-30,33,44-45H,1,17H2,2-5H3/t19-,26+,27?,28+,29+,30-,33-,34+,35+,36-,37+,38?/m1/s1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* CC1C2C(C3C4C1(C5=CC(=C(Cl)Cl)C(C5(C(C6(C4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O2)(O3)C8=CC=CC=C8)(C(=C)C)O
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* C[C@@H]1C2[C@]([C@H]3[C@H]4[C@]1(C5=CC(=C(Cl)Cl)[C@@H]([C@]5([C@@H]([C@@]6([C@H]4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O3)(O2)C8=CC=CC=C8)(C(=C)C)O
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;organism&#34;&gt;Organism&lt;/h3&gt;
+&lt;p&gt;You can check if your organism name is correctly spelled using the Global Names resolver service: 
+.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -82,93 +93,101 @@ Here we keep, respectively:&lt;/p&gt;
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-27-18-40-20_hu5bc9d5ad8ad445b829f5b781d25d9a38_224474_0b942d3c67c73f8d6a3acf88310c0bd5.png 400w,
-               /media/2021-02-27-18-40-20_hu5bc9d5ad8ad445b829f5b781d25d9a38_224474_4f61e36c7015f507684792a76b7ed49d.png 760w,
-               /media/2021-02-27-18-40-20_hu5bc9d5ad8ad445b829f5b781d25d9a38_224474_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-27-18-40-20_hu5bc9d5ad8ad445b829f5b781d25d9a38_224474_0b942d3c67c73f8d6a3acf88310c0bd5.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-27-18-40-20_hu_b917273a4e04af82.webp 320w, https://lotus.nprod.net/media/2021-02-27-18-40-20_hu_7bd83110b72a31e6.webp 480w, https://lotus.nprod.net/media/2021-02-27-18-40-20_hu_9d14b23b90f2812c.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-27-18-40-20_hu_b917273a4e04af82.webp&#34;
                width=&#34;760&#34;
                height=&#34;528&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Alternatively, you can use &lt;a href=&#34;https://github.com/gnames/gnfinder&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gnfinder&lt;/a&gt; in your command line interface to check for the spelling of your organism string.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;echo &amp;quot;Trigonostemion cherrieri&amp;quot; | gnfinder find -c -l eng
-
-{
-  &amp;quot;metadata&amp;quot;: {
-    &amp;quot;date&amp;quot;: &amp;quot;2021-02-27T18:44:41.640982+01:00&amp;quot;,
-    &amp;quot;gnfinderVersion&amp;quot;: &amp;quot;v0.11.1&amp;quot;,
-    &amp;quot;withBayes&amp;quot;: true,
-    &amp;quot;tokensAround&amp;quot;: 0,
-    &amp;quot;language&amp;quot;: &amp;quot;eng&amp;quot;,
-    &amp;quot;detectLanguage&amp;quot;: false,
-    &amp;quot;totalWords&amp;quot;: 2,
-    &amp;quot;totalCandidates&amp;quot;: 1,
-    &amp;quot;totalNames&amp;quot;: 1
-  },
-  &amp;quot;names&amp;quot;: [
-    {
-      &amp;quot;cardinality&amp;quot;: 2,
-      &amp;quot;verbatim&amp;quot;: &amp;quot;Trigonostemion cherrieri&amp;quot;,
-      &amp;quot;name&amp;quot;: &amp;quot;Trigonostemion cherrieri&amp;quot;,
-      &amp;quot;odds&amp;quot;: 77581.46698350731,
-      &amp;quot;start&amp;quot;: 0,
-      &amp;quot;end&amp;quot;: 24,
-      &amp;quot;annotationNomenType&amp;quot;: &amp;quot;NO_ANNOT&amp;quot;,
-      &amp;quot;annotation&amp;quot;: &amp;quot;&amp;quot;,
-      &amp;quot;verification&amp;quot;: {
-        &amp;quot;bestResult&amp;quot;: {
-          &amp;quot;dataSourceId&amp;quot;: 1,
-          &amp;quot;dataSourceTitle&amp;quot;: &amp;quot;Catalogue of Life&amp;quot;,
-          &amp;quot;taxonId&amp;quot;: &amp;quot;1575885&amp;quot;,
-          &amp;quot;matchedName&amp;quot;: &amp;quot;Trigonostemon cherrieri Veillon&amp;quot;,
-          &amp;quot;matchedCardinality&amp;quot;: 2,
-          &amp;quot;matchedCanonicalSimple&amp;quot;: &amp;quot;Trigonostemon cherrieri&amp;quot;,
-          &amp;quot;matchedCanonicalFull&amp;quot;: &amp;quot;Trigonostemon cherrieri&amp;quot;,
-          &amp;quot;classificationPath&amp;quot;: &amp;quot;Plantae|Tracheophyta|Magnoliopsida|Malpighiales|Euphorbiaceae|Trigonostemon|Trigonostemon cherrieri&amp;quot;,
-          &amp;quot;classificationRank&amp;quot;: &amp;quot;kingdom|phylum|class|order|family|genus|species&amp;quot;,
-          &amp;quot;classificationIds&amp;quot;: &amp;quot;3939764|3942634|3942724|3942777|3942795|4210752|1575885&amp;quot;,
-          &amp;quot;editDistance&amp;quot;: 1,
-          &amp;quot;stemEditDistance&amp;quot;: 1,
-          &amp;quot;matchType&amp;quot;: &amp;quot;FuzzyCanonicalMatch&amp;quot;
-        },
-        &amp;quot;dataSourcesNum&amp;quot;: 13,
-        &amp;quot;dataSourceQuality&amp;quot;: &amp;quot;HasCuratedSources&amp;quot;,
-        &amp;quot;retries&amp;quot;: 1
-      }
-    }
-  ]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For misspellings like &lt;em&gt;Trigonstemion cherrieri&lt;/em&gt;, gnfinder can help resolve them, in this case to &lt;em&gt;Trigonostemon cherrieri&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can use 
+ in your command line interface to check for the spelling of your organism string.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;echo &amp;#34;Trigonostemion cherrieri&amp;#34; | gnfinder find -c -l eng
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;metadata&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;date&amp;#34;: &amp;#34;2021-02-27T18:44:41.640982+01:00&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;gnfinderVersion&amp;#34;: &amp;#34;v0.11.1&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;withBayes&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;tokensAround&amp;#34;: 0,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;language&amp;#34;: &amp;#34;eng&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;detectLanguage&amp;#34;: false,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;totalWords&amp;#34;: 2,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;totalCandidates&amp;#34;: 1,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;totalNames&amp;#34;: 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;names&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;cardinality&amp;#34;: 2,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;verbatim&amp;#34;: &amp;#34;Trigonostemion cherrieri&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;Trigonostemion cherrieri&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;odds&amp;#34;: 77581.46698350731,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;start&amp;#34;: 0,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;end&amp;#34;: 24,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;annotationNomenType&amp;#34;: &amp;#34;NO_ANNOT&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;annotation&amp;#34;: &amp;#34;&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;verification&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;bestResult&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;dataSourceId&amp;#34;: 1,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;dataSourceTitle&amp;#34;: &amp;#34;Catalogue of Life&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;taxonId&amp;#34;: &amp;#34;1575885&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;matchedName&amp;#34;: &amp;#34;Trigonostemon cherrieri Veillon&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;matchedCardinality&amp;#34;: 2,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;matchedCanonicalSimple&amp;#34;: &amp;#34;Trigonostemon cherrieri&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;matchedCanonicalFull&amp;#34;: &amp;#34;Trigonostemon cherrieri&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;classificationPath&amp;#34;: &amp;#34;Plantae|Tracheophyta|Magnoliopsida|Malpighiales|Euphorbiaceae|Trigonostemon|Trigonostemon cherrieri&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;classificationRank&amp;#34;: &amp;#34;kingdom|phylum|class|order|family|genus|species&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;classificationIds&amp;#34;: &amp;#34;3939764|3942634|3942724|3942777|3942795|4210752|1575885&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;editDistance&amp;#34;: 1,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;stemEditDistance&amp;#34;: 1,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;matchType&amp;#34;: &amp;#34;FuzzyCanonicalMatch&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;dataSourcesNum&amp;#34;: 13,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;dataSourceQuality&amp;#34;: &amp;#34;HasCuratedSources&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;retries&amp;#34;: 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For misspellings like &lt;em&gt;Trigonstemion cherrieri&lt;/em&gt;, gnfinder can help resolve them, in this case to &lt;em&gt;Trigonostemon cherrieri&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
-&lt;p&gt;Make sure that you have the correct &lt;a href=&#34;https://www.doi.org/doi_handbook/Glossary.html#doi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Digital Object Identifier (DOI)&lt;/a&gt; for it.
-For &amp;ldquo;&lt;a href=&#34;https://doi.org/10.1021/OL2030907&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trigocherrin A, the first natural chlorinated daphnane diterpene orthoester from Trigonostemon cherrieri&lt;/a&gt;&amp;rdquo;, this is  &lt;strong&gt;10.1021/ol2030907&lt;/strong&gt;. Note that DOIs are uppercase-normalized in Wikidata.&lt;/p&gt;
-&lt;h2 id=&#34;check-for-the-presence-of-your-compound-in-wikidata-a-namecheck_compounda&#34;&gt;Check for the presence of your compound in Wikidata &lt;a name=&#34;check_compound&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Make sure that you have the correct 
+ for it.
+For &amp;ldquo;
+&amp;rdquo;, this is  &lt;strong&gt;10.1021/ol2030907&lt;/strong&gt;. Note that DOIs are uppercase-normalized in Wikidata.&lt;/p&gt;
+&lt;h2 id=&#34;check-for-the-presence-of-your-compound-in-wikidata&#34;&gt;Check for the presence of your compound in Wikidata &lt;a name=&#34;check_compound&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Using the compound&amp;rsquo;s InChIKey (i.e. &lt;code&gt;QOVGHDRCAGYGEB-FFZYJECLSA-N&lt;/code&gt; for trigocherrin A), run a SPARQL query to check if your compound is present in Wikidata or not:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-SPARQL&#34;&gt;SELECT ?item ?itemLabel WHERE {
-  VALUES ?classes {
-    wd:Q11173 # chemical compound
-    wd:Q59199015 # group of stereoisomers
-    wd:Q79529 # chemical substance
-    wd:Q17339814 # group of chemical substances
-    wd:Q47154513 # structural class of chemical compounds
-    wd:Q113145171 # type of chemical entity
-  }
-  ?item wdt:P31 ?classes. # instance of
-  ?item wdt:P235 &#39;QOVGHDRCAGYGEB-FFZYJECLSA-N&#39; . # InChIKey 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language &amp;quot;[AUTO_LANGUAGE],en&amp;quot;. }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href=&#34;https://w.wiki/7Szk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Try this query&lt;/a&gt;. You can adapt it by replacing the InChIKey with the one for your compound.&lt;/p&gt;
-&lt;p&gt;Alternatively you can use the following Scholia link (replace by your compounds InChIKey) &lt;a href=&#34;https://scholia.toolforge.org/inchikey/QOVGHDRCAGYGEB-FFZYJECLSA-N&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://scholia.toolforge.org/inchikey/QOVGHDRCAGYGEB-FFZYJECLSA-N&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If your compound is already present on Wikidata, you can directly skip to the &lt;a href=&#34;#add_bio&#34;&gt;Add the biological source information&lt;/a&gt; section below.&lt;/p&gt;
-&lt;h2 id=&#34;add-your-data-manually-to-wikidata-a-nameadd_your_data_manuallya&#34;&gt;Add your data manually to Wikidata &lt;a name=&#34;add_your_data_manually&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;First, if you do not have a Wikidata account already, it is advisable that you create one via &lt;a href=&#34;https://www.wikidata.org/wiki/Special:CreateAccount&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wikidata.org/wiki/Special:CreateAccount&lt;/a&gt;. While an account is not strictly required for manual edits, having one will be useful if you want to contribute more than once, and it helps in getting your contributions recognized. Note that Wikidata accounts are integrated with accounts across the Wikimedia ecosystem, so if you already have an account on, say, any Wikipedia or on Wikispecies, then you can use the same credentials on Wikidata.&lt;/p&gt;
-&lt;p&gt;If you are unfamiliar with how Wikidata works, you can start by reading the Wikidata introduction page &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Introduction&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wikidata.org/wiki/Wikidata:Introduction&lt;/a&gt; and have a look at the Wikidata Tours page &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Tours&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wikidata.org/wiki/Wikidata:Tours&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now that you are all set up, you can go to Wikidata&amp;rsquo;s page for creating new items, &lt;a href=&#34;https://www.wikidata.org/wiki/Special:NewItem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wikidata.org/wiki/Special:NewItem&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-SPARQL&#34; data-lang=&#34;SPARQL&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?itemLabel&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;err&#34;&gt;VALUES&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?classes&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q11173&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# chemical compound&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q59199015&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# group of stereoisomers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q79529&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# chemical substance&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q17339814&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# group of chemical substances&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q47154513&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# structural class of chemical compounds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q113145171&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# type of chemical entity&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P31&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?classes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# instance of&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P235&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;QOVGHDRCAGYGEB-FFZYJECLSA-N&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# InChIKey &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;SERVICE&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wikibase&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;bd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;serviceParam&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wikibase&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;language&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;[AUTO_LANGUAGE],en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+. You can adapt it by replacing the InChIKey with the one for your compound.&lt;/p&gt;
+&lt;p&gt;Alternatively you can use the following Scholia link (replace by your compounds InChIKey) 
+&lt;/p&gt;
+&lt;p&gt;If your compound is already present on Wikidata, you can directly skip to the 
+ section below.&lt;/p&gt;
+&lt;h2 id=&#34;add-your-data-manually-to-wikidata&#34;&gt;Add your data manually to Wikidata &lt;a name=&#34;add_your_data_manually&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;First, if you do not have a Wikidata account already, it is advisable that you create one via 
+. While an account is not strictly required for manual edits, having one will be useful if you want to contribute more than once, and it helps in getting your contributions recognized. Note that Wikidata accounts are integrated with accounts across the Wikimedia ecosystem, so if you already have an account on, say, any Wikipedia or on Wikispecies, then you can use the same credentials on Wikidata.&lt;/p&gt;
+&lt;p&gt;If you are unfamiliar with how Wikidata works, you can start by reading the Wikidata introduction page 
+ and have a look at the Wikidata Tours page 
+.&lt;/p&gt;
+&lt;p&gt;Now that you are all set up, you can go to Wikidata&amp;rsquo;s page for creating new items, 
+:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -186,14 +205,14 @@ For &amp;ldquo;&lt;a href=&#34;https://doi.org/10.1021/OL2030907&#34; target=&#3
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-18-03_hu57061788d807f1197141a3baa28fe1c2_287124_a61ad9a6a59d879f3ae6c568a7b69e32.png 400w,
-               /media/2021-02-25-14-18-03_hu57061788d807f1197141a3baa28fe1c2_287124_45923b4cb668ae4a7b88b87987fc434a.png 760w,
-               /media/2021-02-25-14-18-03_hu57061788d807f1197141a3baa28fe1c2_287124_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-18-03_hu57061788d807f1197141a3baa28fe1c2_287124_a61ad9a6a59d879f3ae6c568a7b69e32.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-18-03_hu_8288396b65166350.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-18-03_hu_61cf54b893491956.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-18-03_hu_807c9deebd8f0200.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-18-03_hu_8288396b65166350.webp&#34;
                width=&#34;760&#34;
-               height=&#34;343&#34;
+               height=&#34;344&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -215,18 +234,18 @@ For &amp;ldquo;&lt;a href=&#34;https://doi.org/10.1021/OL2030907&#34; target=&#3
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-18-50_hu129efbf47a08de126ef1f14085264ff7_277324_cab6e6574f340dcfd7e97117523e80d1.png 400w,
-               /media/2021-02-25-14-18-50_hu129efbf47a08de126ef1f14085264ff7_277324_e01824c28e4c9e741788d2eeb67eeb0e.png 760w,
-               /media/2021-02-25-14-18-50_hu129efbf47a08de126ef1f14085264ff7_277324_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-18-50_hu129efbf47a08de126ef1f14085264ff7_277324_cab6e6574f340dcfd7e97117523e80d1.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-18-50_hu_c69d971e5185304a.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-18-50_hu_700b0a71a7274acf.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-18-50_hu_48dea1bc7eadd82d.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-18-50_hu_c69d971e5185304a.webp&#34;
                width=&#34;760&#34;
                height=&#34;393&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;add-the-chemical-compound-information-a-nameadd_chemicala&#34;&gt;Add the chemical compound information &lt;a name=&#34;add_chemical&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;add-the-chemical-compound-information&#34;&gt;Add the chemical compound information &lt;a name=&#34;add_chemical&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Create a new statement for &lt;code&gt;is an instance of&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;
 
@@ -245,18 +264,19 @@ For &amp;ldquo;&lt;a href=&#34;https://doi.org/10.1021/OL2030907&#34; target=&#3
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-20-08_hu1fd9639eda51262648e29b88074d99d7_294001_80e495a89acceee93b4596e6b9c2f59d.png 400w,
-               /media/2021-02-25-14-20-08_hu1fd9639eda51262648e29b88074d99d7_294001_e63d4fe333b72895d4a72c59105cd397.png 760w,
-               /media/2021-02-25-14-20-08_hu1fd9639eda51262648e29b88074d99d7_294001_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-20-08_hu1fd9639eda51262648e29b88074d99d7_294001_80e495a89acceee93b4596e6b9c2f59d.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-20-08_hu_c07f2a38c8a512e7.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-20-08_hu_eee064cd7918d4fb.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-20-08_hu_5607a7701fee3541.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-20-08_hu_c07f2a38c8a512e7.webp&#34;
                width=&#34;760&#34;
                height=&#34;388&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;and select chemical compound (i.e. &lt;a href=&#34;https://www.wikidata.org/wiki/Q11173&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Q11173&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;and select chemical compound (i.e. 
+):&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -274,12 +294,12 @@ For &amp;ldquo;&lt;a href=&#34;https://doi.org/10.1021/OL2030907&#34; target=&#3
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-20-58_hu28ae9a958d8f2d4a86d82b34febc7d19_85053_cd3e3e4c144e24fec722933d6f0d18b3.png 400w,
-               /media/2021-02-25-14-20-58_hu28ae9a958d8f2d4a86d82b34febc7d19_85053_14dc3cc8e0258041ef23323551e7765e.png 760w,
-               /media/2021-02-25-14-20-58_hu28ae9a958d8f2d4a86d82b34febc7d19_85053_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-20-58_hu28ae9a958d8f2d4a86d82b34febc7d19_85053_cd3e3e4c144e24fec722933d6f0d18b3.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-20-58_hu_4e112e6f2deda01.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-20-58_hu_45d28dbfa992d771.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-20-58_hu_9bd48d9e8cc70ef0.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-20-58_hu_4e112e6f2deda01.webp&#34;
                width=&#34;760&#34;
                height=&#34;113&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -304,12 +324,12 @@ For &amp;ldquo;&lt;a href=&#34;https://doi.org/10.1021/OL2030907&#34; target=&#3
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-22-44_hu19bfb18a0af6d919d21bf19c4a9f3ca2_380628_b644148196e9dc8feb526dea11e4e005.png 400w,
-               /media/2021-02-25-14-22-44_hu19bfb18a0af6d919d21bf19c4a9f3ca2_380628_fadfbacc3e98cbf506359fb9d636e390.png 760w,
-               /media/2021-02-25-14-22-44_hu19bfb18a0af6d919d21bf19c4a9f3ca2_380628_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-22-44_hu19bfb18a0af6d919d21bf19c4a9f3ca2_380628_b644148196e9dc8feb526dea11e4e005.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-22-44_hu_9d3b1ff071a497b6.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-22-44_hu_a2a5e52bc1f590cf.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-22-44_hu_85feca1e13659667.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-22-44_hu_9d3b1ff071a497b6.webp&#34;
                width=&#34;760&#34;
                height=&#34;398&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -335,12 +355,12 @@ Note the little flag which will automatically tell you if you have some problems
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-24-34_hua3b32cc836a74fbcf9f296dbd8454aa8_52487_fc9fff0a5138471fe8bbced635dd8e02.png 400w,
-               /media/2021-02-25-14-24-34_hua3b32cc836a74fbcf9f296dbd8454aa8_52487_7721e0e5b167fb8e752fe85c58dc44ac.png 760w,
-               /media/2021-02-25-14-24-34_hua3b32cc836a74fbcf9f296dbd8454aa8_52487_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-24-34_hua3b32cc836a74fbcf9f296dbd8454aa8_52487_fc9fff0a5138471fe8bbced635dd8e02.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-24-34_hu_653857a56757d5cf.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-24-34_hu_c29a174a778dbe88.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-24-34_hu_8d7a63cd8204aa4e.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-24-34_hu_653857a56757d5cf.webp&#34;
                width=&#34;760&#34;
                height=&#34;194&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -350,12 +370,12 @@ Note the little flag which will automatically tell you if you have some problems
 &lt;p&gt;Let&amp;rsquo;s go ahead and add the InChI string.&lt;/p&gt;
 &lt;p&gt;Likewise, the addition of an isomeric SMILES string will require us to add a Canonical SMILES.&lt;/p&gt;
 &lt;p&gt;Note that you might have to copy and paste the SMILES string from PubChem to a plain text editor and then back to Wikidata because of some formatting issues when copy pasting directly from PubChem.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C[C@@H]1C2[C@]([C@H]3[C@H]4[C@]1(C5=CC(=C(Cl)Cl)[C@@H]([C@]5([C@@H]([C@@]6([C@H]4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O3)(O2)C8=CC=CC=C8)(C(=C)C)O
-
-CC1C2C(C3C4C1(C5=CC(=C(Cl)Cl)C(C5(C(C6(C4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O2)(O3)C8=CC=CC=C8)(C(=C)C)O
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;add-the-biological-source-information-a-nameadd_bioa&#34;&gt;Add the biological source information &lt;a name=&#34;add_bio&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Now let&amp;rsquo;s add the &lt;code&gt;found in taxon&lt;/code&gt; property (&lt;a href=&#34;https://www.wikidata.org/wiki/Property:P703&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;P703&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C[C@@H]1C2[C@]([C@H]3[C@H]4[C@]1(C5=CC(=C(Cl)Cl)[C@@H]([C@]5([C@@H]([C@@]6([C@H]4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O3)(O2)C8=CC=CC=C8)(C(=C)C)O
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;CC1C2C(C3C4C1(C5=CC(=C(Cl)Cl)C(C5(C(C6(C4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7)OC(O2)(O3)C8=CC=CC=C8)(C(=C)C)O
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;add-the-biological-source-information&#34;&gt;Add the biological source information &lt;a name=&#34;add_bio&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s add the &lt;code&gt;found in taxon&lt;/code&gt; property (
+).&lt;/p&gt;
 &lt;p&gt;Just click on &lt;code&gt;Add a new statement&lt;/code&gt; and type in the first letters of the property you want to add:&lt;/p&gt;
 &lt;p&gt;
 
@@ -374,12 +394,12 @@ CC1C2C(C3C4C1(C5=CC(=C(Cl)Cl)C(C5(C(C6(C4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-31-56_hu976a446e2f8cd32783211cc24796329f_75928_bdbfbceab999a6e939273eaeb3244770.png 400w,
-               /media/2021-02-25-14-31-56_hu976a446e2f8cd32783211cc24796329f_75928_55844c84e2ab1dfcd621807932c109c2.png 760w,
-               /media/2021-02-25-14-31-56_hu976a446e2f8cd32783211cc24796329f_75928_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-31-56_hu976a446e2f8cd32783211cc24796329f_75928_bdbfbceab999a6e939273eaeb3244770.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-31-56_hu_b79bf73d243a279f.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-31-56_hu_4f2a7651ee45beb7.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-31-56_hu_627c2852c1c2ab5b.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-31-56_hu_b79bf73d243a279f.webp&#34;
                width=&#34;760&#34;
                height=&#34;195&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -403,20 +423,23 @@ CC1C2C(C3C4C1(C5=CC(=C(Cl)Cl)C(C5(C(C6(C4O6)COC(=O)C)OC(=O)C)O)OC(=O)C7=CC=CC=C7
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-33-14_huba77419ab00ad638110d9166cf7405b3_42610_45400be8292f622ffaa7be5ad2d1518d.png 400w,
-               /media/2021-02-25-14-33-14_huba77419ab00ad638110d9166cf7405b3_42610_411c27b29bc90011452a799dc8e2e667.png 760w,
-               /media/2021-02-25-14-33-14_huba77419ab00ad638110d9166cf7405b3_42610_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-33-14_huba77419ab00ad638110d9166cf7405b3_42610_45400be8292f622ffaa7be5ad2d1518d.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-33-14_hu_b6c699aa0cd3cb8.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-33-14_hu_792c6c96a17ac7c3.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-33-14_hu_70f011a8b692cf86.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-33-14_hu_b6c699aa0cd3cb8.webp&#34;
                width=&#34;760&#34;
                height=&#34;157&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Click &lt;code&gt;publish&lt;/code&gt; to save your changes and make them public.&lt;/p&gt;
-&lt;p&gt;If your target taxon is not yet present on Wikidata and you are sure you have a valid taxon name that is spelled correctly, then you can go to &lt;a href=&#34;https://www.wikidata.org/wiki/Special:NewItem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wikidata.org/wiki/Special:NewItem&lt;/a&gt;, as described in the &lt;a href=&#34;#add_your_data_manually&#34;&gt;Add your data manually to Wikidata&lt;/a&gt; section. For items about taxa, the &lt;code&gt;instance of&lt;/code&gt; statement should have a value &lt;code&gt;taxon&lt;/code&gt; (i.e. &lt;a href=&#34;https://www.wikidata.org/wiki/Q16521&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Q16521&lt;/a&gt;). As for chemical compounds, the user interface will then suggest to you further statements to add. For taxa, these include taxon name, parent taxon and taxon rank.&lt;/p&gt;
-&lt;h3 id=&#34;add-the-reference-documenting-the-structure-organism-pair-a-nameadd_refa&#34;&gt;Add the reference documenting the structure-organism pair &lt;a name=&#34;add_ref&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;If your target taxon is not yet present on Wikidata and you are sure you have a valid taxon name that is spelled correctly, then you can go to 
+, as described in the 
+ section. For items about taxa, the &lt;code&gt;instance of&lt;/code&gt; statement should have a value &lt;code&gt;taxon&lt;/code&gt; (i.e. 
+). As for chemical compounds, the user interface will then suggest to you further statements to add. For taxa, these include taxon name, parent taxon and taxon rank.&lt;/p&gt;
+&lt;h3 id=&#34;add-the-reference-documenting-the-structure-organism-pair&#34;&gt;Add the reference documenting the structure-organism pair &lt;a name=&#34;add_ref&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Finally, since we report documented structure-organisms pairs, we need to add the reference for this newly created &lt;code&gt;compound found in taxon&lt;/code&gt; relationship.
 This happens on the item about the compound, just below the &lt;code&gt;found in taxon&lt;/code&gt; statement. Click on the &lt;code&gt;0 references&lt;/code&gt; link and then on &lt;code&gt;add reference&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;
@@ -436,18 +459,19 @@ This happens on the item about the compound, just below the &lt;code&gt;found in
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-35-33_hu8d42a529f3ab41d06b9cba3d75669674_27849_b4dbed71943cffaa21f11f7dd0fe5f6c.png 400w,
-               /media/2021-02-25-14-35-33_hu8d42a529f3ab41d06b9cba3d75669674_27849_744e51320159d16dd491a3426d5037c7.png 760w,
-               /media/2021-02-25-14-35-33_hu8d42a529f3ab41d06b9cba3d75669674_27849_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-35-33_hu8d42a529f3ab41d06b9cba3d75669674_27849_b4dbed71943cffaa21f11f7dd0fe5f6c.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-35-33_hu_b5ff536427e23c91.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-35-33_hu_596a3afa6775b160.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-35-33_hu_894d8b1de2d8cc0c.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-35-33_hu_b5ff536427e23c91.webp&#34;
                width=&#34;760&#34;
                height=&#34;110&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Here, we use the &lt;code&gt;stated in&lt;/code&gt; property (&lt;a href=&#34;https://www.wikidata.org/wiki/Property:P248&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;P248&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;Here, we use the &lt;code&gt;stated in&lt;/code&gt; property (
+):&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -465,18 +489,19 @@ This happens on the item about the compound, just below the &lt;code&gt;found in
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-36-33_hu19be3eb33ce819b5f13c12689167108e_66675_6f180c6515b98d32378c51afc21111ab.png 400w,
-               /media/2021-02-25-14-36-33_hu19be3eb33ce819b5f13c12689167108e_66675_2383f59111f6eef512a6b729e82a610e.png 760w,
-               /media/2021-02-25-14-36-33_hu19be3eb33ce819b5f13c12689167108e_66675_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-36-33_hu19be3eb33ce819b5f13c12689167108e_66675_6f180c6515b98d32378c51afc21111ab.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-36-33_hu_ed51a488b80e7764.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-36-33_hu_b969b278ee2d86f5.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-36-33_hu_7bebbd88d5aa14d0.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-36-33_hu_ed51a488b80e7764.webp&#34;
                width=&#34;760&#34;
                height=&#34;234&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Now, type in the first letters or word of the scientific publication documenting the natural product occurence, autocompletion happens again. Note that multiple publications might have the same title, and that there could be minor differences in punctuation or special characters between the information you and Wikidata have about the same reference. If you are not sure whether your target reference is already in Wikidata, you can use its DOI to check, as outlined in the &lt;a href=&#34;#check_ref&#34;&gt;Check whether your target reference is already on Wikidata&lt;/a&gt; section.&lt;/p&gt;
+&lt;p&gt;Now, type in the first letters or word of the scientific publication documenting the natural product occurence, autocompletion happens again. Note that multiple publications might have the same title, and that there could be minor differences in punctuation or special characters between the information you and Wikidata have about the same reference. If you are not sure whether your target reference is already in Wikidata, you can use its DOI to check, as outlined in the 
+ section.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -494,12 +519,12 @@ This happens on the item about the compound, just below the &lt;code&gt;found in
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-38-54_huf7bdda7c80b77296f25a92965dc376a4_83759_56f6e5679919e108db5ad461360a8d1d.png 400w,
-               /media/2021-02-25-14-38-54_huf7bdda7c80b77296f25a92965dc376a4_83759_608c4e6c2ca5e8f950e5ad60d4df1685.png 760w,
-               /media/2021-02-25-14-38-54_huf7bdda7c80b77296f25a92965dc376a4_83759_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-38-54_huf7bdda7c80b77296f25a92965dc376a4_83759_56f6e5679919e108db5ad461360a8d1d.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-38-54_hu_d81b4981b640335c.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-38-54_hu_7d8834dadfd6ecba.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-38-54_hu_295c09a0f969a826.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-38-54_hu_d81b4981b640335c.webp&#34;
                width=&#34;760&#34;
                height=&#34;224&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -523,56 +548,66 @@ This happens on the item about the compound, just below the &lt;code&gt;found in
 
 
 &lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /media/2021-02-25-14-39-48_hu9d096b4bd8f650a4d538aeeee5dbbb53_62161_6a5e80d8170b7804e2ecee05fe468073.png 400w,
-               /media/2021-02-25-14-39-48_hu9d096b4bd8f650a4d538aeeee5dbbb53_62161_9a3c528626cfeeb0174b8279367cbcac.png 760w,
-               /media/2021-02-25-14-39-48_hu9d096b4bd8f650a4d538aeeee5dbbb53_62161_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-39-48_hu9d096b4bd8f650a4d538aeeee5dbbb53_62161_6a5e80d8170b7804e2ecee05fe468073.png&#34;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;&#34; 
+               srcset=&#34;https://lotus.nprod.net/media/2021-02-25-14-39-48_hu_a784e072f650fbe9.webp 320w, https://lotus.nprod.net/media/2021-02-25-14-39-48_hu_c0087d64493cc6e1.webp 480w, https://lotus.nprod.net/media/2021-02-25-14-39-48_hu_39ed214390bd34a0.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;https://lotus.nprod.net/media/2021-02-25-14-39-48_hu_a784e072f650fbe9.webp&#34;
                width=&#34;760&#34;
                height=&#34;254&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;check-whether-your-target-reference-is-already-on-wikidata-a-namecheck_refa&#34;&gt;Check whether your target reference is already on Wikidata &lt;a name=&#34;check_ref&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;If you are not sure whether your target reference is already in Wikidata, you can use its DOI to check. For our DOI &lt;code&gt;10.1021/ol2030907&lt;/code&gt;, the URL &lt;a href=&#34;https://scholia.toolforge.org/doi/10.1021/ol2030907&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://scholia.toolforge.org/doi/&lt;em&gt;&lt;strong&gt;10.1021/ol2030907&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt; will lead you to a &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Scholia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scholia&lt;/a&gt; page about this publication: &lt;a href=&#34;https://scholia.toolforge.org/work/Q83059010&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://scholia.toolforge.org/work/Q83059010&lt;/a&gt;. Scholia visualizes information from Wikidata, so if it has an entry for your target reference, then so does Wikidata, and both of them will use the same identifier (in this case &lt;a href=&#34;https://www.wikidata.org/wiki/Q83059010&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Q83059010&lt;/a&gt;). If you prefer to resolve your DOI to Wikidata directly, you can do so by using the uppercase-normalized DOI in the following URL pattern: &lt;a href=&#34;https://hub.toolforge.org/P356:10.1021/OL2030907&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hub.toolforge.org/P356:&lt;strong&gt;10.1021/OL2030907&lt;/strong&gt;&lt;/a&gt;, which will lead you to the respective Wikidata page, in this case &lt;a href=&#34;https://www.wikidata.org/wiki/Q83059010&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Q83059010&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you think that no Wikidata entry exists for your target reference, you can use the DOI in the URL pattern &lt;a href=&#34;https://sourcemd.toolforge.org/index_old.php?id=10.1021/ol2030907&amp;amp;doit=Check&amp;#43;source&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://sourcemd.toolforge.org/index_old.php?id=&lt;strong&gt;10.1021/ol2030907&lt;/strong&gt;&amp;amp;doit=Check+source&lt;/a&gt;, which will trigger a check with both Crossref and Wikidata, and if no Wikidata entry can be found, the metadata from Crossref will be fetched and presented to you for creating the respective Wikidata item semi-automatically. Using such semi-automated workflows does require and account that is a minimum number of days old and has made a minimum number of edits on Wikidata.&lt;/p&gt;
-&lt;p&gt;If you are interested the annotation of article with topics in Scholia here is a tutorial &lt;a href=&#34;https://laurendupuis.github.io/Scholia_tutorial/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://laurendupuis.github.io/Scholia_tutorial/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;check-whether-your-target-reference-is-already-on-wikidata&#34;&gt;Check whether your target reference is already on Wikidata &lt;a name=&#34;check_ref&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;If you are not sure whether your target reference is already in Wikidata, you can use its DOI to check. For our DOI &lt;code&gt;10.1021/ol2030907&lt;/code&gt;, the URL 
+ will lead you to a 
+ page about this publication: 
+. Scholia visualizes information from Wikidata, so if it has an entry for your target reference, then so does Wikidata, and both of them will use the same identifier (in this case 
+). If you prefer to resolve your DOI to Wikidata directly, you can do so by using the uppercase-normalized DOI in the following URL pattern: 
+, which will lead you to the respective Wikidata page, in this case 
+.&lt;/p&gt;
+&lt;p&gt;If you think that no Wikidata entry exists for your target reference, you can use the DOI in the URL pattern 
+, which will trigger a check with both Crossref and Wikidata, and if no Wikidata entry can be found, the metadata from Crossref will be fetched and presented to you for creating the respective Wikidata item semi-automatically. Using such semi-automated workflows does require and account that is a minimum number of days old and has made a minimum number of edits on Wikidata.&lt;/p&gt;
+&lt;p&gt;If you are interested the annotation of article with topics in Scholia here is a tutorial 
+&lt;/p&gt;
 &lt;h2 id=&#34;voila-&#34;&gt;Voila !&lt;/h2&gt;
 &lt;p&gt;You have added your first documented structure-organism relationship to Wikidata and made a valuable contribution to the community.
 You can add further statements, e.g. &lt;code&gt;molecular formula&lt;/code&gt;, or &lt;code&gt;SPLASH code&lt;/code&gt; for linking to spectral data.&lt;/p&gt;
-&lt;p&gt;The Wikidata entry &lt;a href=&#34;https://www.wikidata.org/wiki/Q105674316&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wikidata.org/wiki/Q105674316&lt;/a&gt; has been started using these instructions.&lt;/p&gt;
-&lt;p&gt;You can run a SPARQL query and check that everything went smoothly by modifying the InChiKey line in the following &lt;a href=&#34;https://w.wiki/32zb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPARQL query&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-SPARQL&#34;&gt;SELECT ?item ?itemLabel ?taxonLabel ?artLabel WHERE {
-  VALUES ?classes {
-    wd:Q11173 # chemical compound
-    wd:Q59199015 # group of stereoisomers
-    wd:Q79529 # chemical substance
-    wd:Q17339814 # group of chemical substances
-    wd:Q47154513 # structural class of chemical compounds
-  }
-  ?item wdt:P31 ?classes. # instance of
-  ?item wdt:P235 &#39;QOVGHDRCAGYGEB-FFZYJECLSA-N&#39; # InChiKey
-  {
-    ?item p:P1582 ?stmt. # natural product of taxon
-    ?stmt ps:P1582 ?taxon. # natural product of taxon
-    OPTIONAL {
-      ?stmt prov:wasDerivedFrom ?ref. 
-      ?ref pr:P248 ?art. # stated in
-    }
-  }
-  UNION
-  {
-    ?item p:P703 ?stmt. # found in taxon
-    ?stmt ps:P703 ?taxon. # found in taxon
-    OPTIONAL {
-      ?stmt prov:wasDerivedFrom ?ref.
-      ?ref pr:P248 ?art. # stated in
-    }
-  }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language &amp;quot;[AUTO_LANGUAGE],en&amp;quot;. }
-}
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;p&gt;The Wikidata entry 
+ has been started using these instructions.&lt;/p&gt;
+&lt;p&gt;You can run a SPARQL query and check that everything went smoothly by modifying the InChiKey line in the following 
+:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-SPARQL&#34; data-lang=&#34;SPARQL&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?itemLabel&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?taxonLabel&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?artLabel&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;err&#34;&gt;VALUES&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?classes&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q11173&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# chemical compound&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q59199015&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# group of stereoisomers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q79529&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# chemical substance&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q17339814&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# group of chemical substances&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nn&#34;&gt;wd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;Q47154513&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# structural class of chemical compounds&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P31&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?classes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# instance of&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wdt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P235&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;QOVGHDRCAGYGEB-FFZYJECLSA-N&amp;#39;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# InChiKey&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P1582&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?stmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# natural product of taxon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;?stmt&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;ps&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P1582&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?taxon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# natural product of taxon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;OPTIONAL&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nv&#34;&gt;?stmt&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;prov&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;wasDerivedFrom&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?ref&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nv&#34;&gt;?ref&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P248&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?art&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# stated in&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;UNION&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;?item&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P703&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?stmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# found in taxon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;?stmt&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;ps&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P703&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?taxon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# found in taxon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;OPTIONAL&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nv&#34;&gt;?stmt&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;prov&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;wasDerivedFrom&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?ref&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nv&#34;&gt;?ref&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;P248&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;?art&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# stated in&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;SERVICE&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wikibase&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;bd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;serviceParam&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;wikibase&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;language&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;[AUTO_LANGUAGE],en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -580,8 +615,11 @@ You can add further statements, e.g. &lt;code&gt;molecular formula&lt;/code&gt;,
       <link>https://lotus.nprod.net/post/lotus-tmap/</link>
       <pubDate>Thu, 27 May 2021 11:02:46 +0200</pubDate>
       <guid>https://lotus.nprod.net/post/lotus-tmap/</guid>
-      <description>&lt;p&gt;Have a look at the LOTUS tmap display directly here &lt;a href=&#34;https://metabo-store.nprod.net/tmap/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://metabo-store.nprod.net/tmap/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Tmap allows the organization and visualization of huge sets of data of diverse type. More details on the library here &lt;a href=&#34;https://tmap.gdb.tools/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://tmap.gdb.tools/&lt;/a&gt;. These tools have been developped at the Reymond research group &lt;a href=&#34;https://gdb.unibe.ch/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gdb.unibe.ch/&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Have a look at the LOTUS tmap display directly here 
+&lt;/p&gt;
+&lt;p&gt;Tmap allows the organization and visualization of huge sets of data of diverse type. More details on the library here 
+. These tools have been developped at the Reymond research group 
+&lt;/p&gt;
 &lt;embed src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Lotus_initiative_1_biologically_interpreted_chemical_tree.svg/563px-Lotus_initiative_1_biologically_interpreted_chemical_tree.svg.png&#34;&gt;</description>
     </item>
     
@@ -590,8 +628,10 @@ You can add further statements, e.g. &lt;code&gt;molecular formula&lt;/code&gt;,
       <link>https://lotus.nprod.net/post/lotus-is-up-naturalproductsnet/</link>
       <pubDate>Tue, 16 Feb 2021 16:50:33 +0100</pubDate>
       <guid>https://lotus.nprod.net/post/lotus-is-up-naturalproductsnet/</guid>
-      <description>&lt;p&gt;Thanks to &lt;a href=&#34;https://lotus.nprod.net/authors/maria/&#34;&gt;Maria Sorokina&lt;/a&gt;, we now have an up and running version of LOTUS at &lt;a href=&#34;https://lotus.naturalproducts.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lotus.naturalproducts.net/&lt;/a&gt; 🧘‍♀️&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://lotus.naturalproducts.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lotus.naturalproducts.net/&lt;/a&gt; version allows a more user friendly experience (such as structural search, taxonomy oriented query, flat table and structures exports).&lt;/p&gt;
+      <description>&lt;p&gt;Thanks to &lt;a href=&#34;https://lotus.nprod.net/authors/maria/&#34;&gt;Maria Sorokina&lt;/a&gt;, we now have an up and running version of LOTUS at 
+ 🧘‍♀️&lt;/p&gt;
+&lt;p&gt;The 
+ version allows a more user friendly experience (such as structural search, taxonomy oriented query, flat table and structures exports).&lt;/p&gt;
 &lt;embed src=&#34;https://lotus.naturalproducts.net/&#34; style=&#34;width:1000px; height: 800px;&#34;&gt;</description>
     </item>
     
@@ -612,7 +652,8 @@ You can add further statements, e.g. &lt;code&gt;molecular formula&lt;/code&gt;,
       <guid>https://lotus.nprod.net/post/otol-id-accepted/</guid>
       <description>&lt;p&gt;After a short time and a proposal by &lt;a href=&#34;https://lotus.nprod.net/authors/adriano/&#34;&gt;Adriano Rutz&lt;/a&gt;, a new property, Open Tree of Life ID (P9157), has been acepted on Wikidata. 🔥&lt;/p&gt;
 &lt;p&gt;It represents an identifier for an entity in Open Tree of Life, a comprehensive, dynamic and digitally-available tree of life by synthesizing published phylogenetic trees along with taxonomic data.&lt;/p&gt;
-&lt;p&gt;See here for more details &lt;a href=&#34;https://www.wikidata.org/wiki/Property:P9157&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wikidata.org/wiki/Property:P9157&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;See here for more details 
+&lt;/p&gt;</description>
     </item>
     
     <item>
