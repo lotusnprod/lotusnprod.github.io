@@ -1,0 +1,7 @@
+build:
+  hugo_version: '0.169.0'
+deploy:
+  host: 'github-pages'
+template:
+  id: "lotus-initiative"
+  name: "The LOTUS Initiative"
