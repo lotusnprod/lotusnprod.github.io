@@ -18,13 +18,16 @@ imports:
       - source: archetypes
         target: archetypes
 
-      # Server-rendered blocks, including content-collection.
-      - source: blox
-        target: layouts/_partials/hbx/blocks
-        files:
-          - "**/block.html"
+      # Mount server-rendered blocks directly. The renderer looks for
+      # layouts/_partials/hbx/blocks/<block>/block.html.
+      - source: blox/content-collection
+        target: layouts/_partials/hbx/blocks/content-collection
+      - source: blox/hero
+        target: layouts/_partials/hbx/blocks/hero
+      - source: blox/markdown
+        target: layouts/_partials/hbx/blocks/markdown
 
-      # Block client code and styles.
+      # Block client code and assets.
       - source: blox
         target: assets/js/hbx/blocks
         files:
