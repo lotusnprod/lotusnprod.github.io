@@ -15,7 +15,7 @@ authors:
 - jlw
 - jonathan
 - pma
-date: "2021-12-024T00:00:00Z"
+date: "2021-12-24T00:00:00Z"
 doi: "10.1101/2021.02.28.433265"
 
 # Schedule page publish date (NOT publication's date).
