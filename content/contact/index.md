@@ -11,3 +11,4 @@ sections:
         to or editing data on Wikidata, improving our tools, or contacting the
         maintainers through the [LOTUS GitHub organization](https://github.com/lotusnprod).
         For general inquiries, email [the LOTUS team](mailto:the-lotus-initiative@protonmail.com).
+---

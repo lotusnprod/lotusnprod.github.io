@@ -18,3 +18,4 @@ sections:
     design:
       view: card
       columns: 2
+---
