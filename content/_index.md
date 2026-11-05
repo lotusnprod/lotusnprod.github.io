@@ -22,18 +22,8 @@ sections:
         reusable data and tools. Researchers can contribute directly by improving
         the underlying Wikidata records or by working with the software and data
         maintained by the LOTUS community.
-  - block: content-collection
+  - block: markdown
     content:
       title: Latest news
-      count: 5
-      page_type: post
-      sort_by: Date
-      order: desc
-      archive:
-        enable: true
-    design:
-      view: card
-      columns: 1
-      show_date: true
-      show_read_more: true
+      text: Read the [latest LOTUS news](/post/).
 ---
