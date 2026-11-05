@@ -1,7 +1,9 @@
-module github.com/wowchemy/starter-hugo-academic
+module github.com/lotusnprod/lotusnprod.github.io
 
-go 1.18
+go 1.19
 
 require (
-github.com/wowchemy/wowchemy-hugo-modules/v5 v5.4.0
+	github.com/HugoBlox/kit/modules/integrations/netlify v0.0.0-20260327032542-ef8ed449c7e8
+	github.com/HugoBlox/kit/modules/blox v0.0.0-20260327043553-76023f9461b1
+	github.com/HugoBlox/kit/modules/slides v0.0.0-20260327041717-ee683c8cd1d1
 )
